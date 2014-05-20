@@ -11,6 +11,13 @@ exports.login = (req, res)=>{
   //we should have the user class do the login for us
   var user = new User(req.body);  //in req.body you are passing in the email and the password
   user.login(u=>{  //the callback here will give us a user that it found in the database, or the user that it inserted
-    console.log(u);
-  });  //this is an instance method,
+    //this is an instance method,
+    if(u){  //if the user id exists, create a cookie
+      req.session.userId = u._id;  //req.session is an object
+    }else{
+      req.session.userId = null;
+    }
+    res.redirect('/');
+
+  });
 };
