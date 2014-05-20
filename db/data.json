@@ -1,0 +1,15 @@
+{"name": "bacon", "menu": "breakfast", "cost": 2.50, "calories": 100}
+{"name": "eggs", "menu": "breakfast", "cost": 3.50, "calories": 200}
+{"name": "pancakes", "menu": "breakfast", "cost": 4.50, "calories": 300}
+{"name": "grits", "menu": "breakfast", "cost": 5.50, "calories": 350}
+{"name": "hash browns", "menu": "breakfast", "cost": 1.75, "calories": 400}
+{"name": "ham sandwich", "menu": "lunch", "cost": 3.50, "calories": 250}
+{"name": "burger", "menu": "lunch", "cost": 2.50, "calories": 500}
+{"name": "french fries", "menu": "lunch", "cost": 6.50, "calories": 600}
+{"name": "salad", "menu": "lunch", "cost": 7.50, "calories": 200}
+{"name": "soup", "menu": "lunch", "cost": 8.50, "calories": 400}
+{"name": "steak", "menu": "dinner", "cost": 0.75, "calories": 250}
+{"name": "salmon", "menu": "dinner", "cost": 4.00, "calories": 500}
+{"name": "sushi", "menu": "dinner", "cost": 5.00, "calories": 600}
+{"name": "spinach", "menu": "dinner", "cost": 6.75, "calories": 300}
+{"name": "fried green tomatoes", "menu": "dinner", "cost": 2.50, "calories": 250}
