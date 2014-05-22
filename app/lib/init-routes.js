@@ -17,6 +17,7 @@ function load(app, fn){
   var home = traceur.require(__dirname + '/../routes/home.js');
   var users = traceur.require(__dirname + '/../routes/users.js');
   var orders = traceur.require(__dirname + '/../routes/orders.js');
+  var dishes = traceur.require(__dirname + '/../routes/dishes.js');
 
 
   app.get('/', dbg, home.index);
@@ -26,6 +27,9 @@ function load(app, fn){
   app.post('/login', dbg, users.login);  //this is the route for when the user posts their info
 
   app.get('/orders', dbg, orders.new);
+  app.post('/orders', dbg, orders.create);
+  app.get('/orders/addmenu', dbg, orders.add);
+  app.get('/dishes/:menu', dbg, dishes.menu);
 
   console.log('Routes Loaded');
   fn();
